@@ -26,6 +26,7 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
   GlobalKey<FormState> keyforma = GlobalKey<FormState>();
   late String verificationId;
   late AnimationController _controller;
+  late String mypin = "";
 
   @override
   void initState() {
@@ -50,7 +51,7 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
     }
   }
 
-  late String mypin = "";
+  
 
   @override
   Widget build(BuildContext context) {
